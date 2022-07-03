@@ -27,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일 양식"
-        android:maxLines="1"
         android:inputType="textEmailAddress"
+        android:maxLines="1"
         android:imeOptions="actionNext"/>
 
     <!-- 상단과 조금 떨어지게 layout_marginTop -->
@@ -43,8 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호 입력"
-        android:maxLines="1"
         android:inputType="textPassword"
+        android:maxLines="1"
         android:imeOptions="actionNext"/>
 
     <CheckBox

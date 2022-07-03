@@ -5,12 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".SignUpActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원가입 창"/>
+
+    <!-- 아이디 약간 들어가 있음 margin : 외부에서 padding : 내부에서 사이즈 조절-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디" />
+
+    <EditText
+        android:id="@+id/idEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 입력"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="비밀번호" />
+
+    <EditText
+        android:id="@+id/passEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="8자 이상 입력"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="닉네임" />
+
+    <EditText
+        android:id="@+id/nickEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임 입력"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionDone"/>
+
+    <!-- 가입부분과 버튼 사이의 공간 주기 : TextView 하나 준다.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"/>
 
 
 </LinearLayout>
