@@ -24,7 +24,14 @@ class MainActivity : AppCompatActivity() {
 
 //        로그인 로직 실행
         loginBtn.setOnClickListener {
-            val myIntent2 = Intent(this, MainActivity2::class.java)
+            val inputEmail = idEdt.text.toString()
+
+            val myIntent = Intent(this, MainActivity2::class.java)
+
+//            이메일이라는 수화물 들고 날라간다.
+            myIntent.putExtra("email", inputEmail)
+//            실제 비행기를 출발
+            startActivity(myIntent) //myIntent : 비행기 티켓을 들고 타는 느낌
         }
     }
 }
