@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".MainActivity">
+    <!-- 화면 전체 들어감 padding으로 -->
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_gravity="center"
         android:src="@drawable/login_img"
         android:background="#666699"/>
 
+    <!-- 아이디 약간 들어가 있음 margin : 외부에서 padding : 내부에서 사이즈 조절-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="아이디"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="아이디" />
 
     <EditText
         android:layout_width="match_parent"
@@ -30,14 +30,12 @@
         android:inputType="textEmailAddress"
         android:imeOptions="actionNext"/>
 
+    <!-- 상단과 조금 떨어지게 layout_marginTop -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="비밀번호"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:text="비밀번호" />
 
     <EditText
         android:layout_width="match_parent"
@@ -50,22 +48,35 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:checked="false"
         android:text="자동 로그인"/>
 
+    <!-- 가입부분과 버튼 사이의 공간 주기 : TextView 하나 준다.-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 버튼 2개가 가로로 꽉차게 1개를 꽉차게 layout_weight="1"
+     2개를 나눠서 하려면 다른 버튼도 주면 됨
+     비율대로 나누고 싶으면 layout_width="0dp"로 한다.
+     -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="회원가입"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="로그인"/>
 
     </LinearLayout>
