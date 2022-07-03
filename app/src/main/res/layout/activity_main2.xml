@@ -14,4 +14,28 @@
         android:layout_height="wrap_content"
         android:text="로그인한 이메일"/>
 
+    <EditText
+        android:id="@+id/nameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름을 입력해주세요."/>
+
+    <EditText
+        android:id="@+id/birthYearEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="생년을 입력해주세요."/>
+
+    <EditText
+        android:id="@+id/nicknameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임을 입력해주세요."/>
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이동버튼"/>
+
 </LinearLayout>
