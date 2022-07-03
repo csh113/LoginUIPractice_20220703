@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, MainActivity2::class.java)
 
 //            이메일이라는 수화물 들고 날라간다.
+//            email이라는 이름표를 만들어서 MainActivity2에 넘긴다.
             myIntent.putExtra("email", inputEmail)
 //            실제 비행기를 출발
             startActivity(myIntent) //myIntent : 비행기 티켓을 들고 타는 느낌
